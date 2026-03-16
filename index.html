@@ -7,6 +7,18 @@
 </head>
 <body>
   <div id="root"></div>
+  <script>
+    // Optional shared persistence for GitHub Pages.
+    // 1) Create a Supabase project/table `boards` with columns: `id text primary key`, `data jsonb`.
+    // 2) Enable RLS and add policies for select/insert/update as needed.
+    // 3) Fill values below with your public anon key/project URL.
+    window.KANBAN_REMOTE = {
+      url: "",
+      apiKey: "",
+      table: "boards",
+      boardId: "main"
+    };
+  </script>
   <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
   <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
