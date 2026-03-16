@@ -14,5 +14,4 @@
     "@babel/core": "^7.23.0",
     "@babel/preset-react": "^7.22.15"
   }
-}</content>
-<parameter name="filePath">vscode-vfs://github/jameswatts1990/jw24.github.io/package.json
+}
