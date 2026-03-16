@@ -1,4 +1,4 @@
-import { useState, useRef, useCallback } from "react";
+const { useState, useRef } = React;
 
 const INIT_DATA = {
   columns: [
@@ -24,7 +24,7 @@ const PRIO = { high: { bg: "#fee2e2", text: "#dc2626", label: "High" }, med: { b
 const TAG_COLORS = ["#6366f1","#ec4899","#14b8a6","#f97316","#8b5cf6","#06b6d4","#e11d48","#84cc16"];
 const tagColor = (t) => TAG_COLORS[Math.abs([...t].reduce((a,c)=>a+c.charCodeAt(0),0)) % TAG_COLORS.length];
 
-export default function App() {
+function App() {
   const [cols] = useState(INIT_DATA.columns);
   const [cards, setCards] = useState(INIT_DATA.cards);
   const [modal, setModal] = useState(null);
